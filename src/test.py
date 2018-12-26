@@ -14,18 +14,14 @@ from digitalio import DigitalInOut
 from adafruit_pn532.spi import PN532_SPI
 #from adafruit_pn532.uart import PN532_UART
 # Configuration for a Raspberry Pi:
-CS   = 20
-MOSI = 13
-MISO = 19
-SCLK = 26
 GREENLEDPIN = 4
 REDLEDPIN = 17
 BLUELEDPIN = 27
 # I2C connection:
-#i2c = busio.I2C(board.SCL, board.SDA)
+i2c = busio.I2C(board.SCL, board.SDA)
 
 # Non-hardware
-#pn532 = PN532_I2C(i2c, debug=False)
+pn532 = PN532_I2C(i2c, debug=False)
 
 # With I2C, we recommend connecting RSTPD_N (reset) to a digital pin for manual
 # harware reset
@@ -36,9 +32,9 @@ BLUELEDPIN = 27
 #pn532 = PN532_I2C(i2c, debug=False, reset=reset_pin, req=req_pin)
 
 # SPI connection:
-spi = busio.SPI(SCLK, MOSI, MISO)
-cs_pin = DigitalInOut(CS)
-pn532 = PN532_SPI(spi, cs_pin, debug=False)
+#spi = busio.SPI(SCLK, MOSI, MISO)
+#cs_pin = DigitalInOut(CS)
+#pn532 = PN532_SPI(spi, cs_pin, debug=False)
 
 # UART connection
 #uart = busio.UART(board.TX, board.RX, baudrate=115200, timeout=100)
