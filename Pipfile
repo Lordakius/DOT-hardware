@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 requests = "*"
 "rpi.gpio" = "*"
+"adafruit-circuitpython-pn532" = "*"
 
 [dev-packages]
 
