@@ -9,7 +9,7 @@
 
 #include <WiFiClient.h>
 
-#include <WIFISecrets.h>
+#include <WiFiSecrets.h>
 
 ESP8266WiFiMulti WiFiMulti;
 
@@ -26,7 +26,7 @@ ESP8266WiFiMulti WiFiMulti;
 
 // Define Backend url
 
-#define BACKEND_URL ("https://postb.in/1574271881203-7465600541327?hello=worldd")
+#define BACKEND_URL ("http://jigsaw.w3.org/HTTP/connection.html")
 
 // If using the breakout or shield with I2C, define just the pins connected
 // to the IRQ and reset lines.
@@ -83,7 +83,7 @@ void setup(void) {
   }
 
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP("WWLAN", "");
+  WiFiMulti.addAP(SECRET_SSID, SECRET_PASSWORD);
 
   // wait for Wifi connection
   while ((WiFiMulti.run() != WL_CONNECTED)) {
