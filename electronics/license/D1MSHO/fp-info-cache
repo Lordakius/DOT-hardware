@@ -1,0 +1,59 @@
+11073546141428
+D1MSHO
+1X01_OFFSET
+<h3>Plated Through Hole - Long Pad w/ Offset Hole</h3>
+<p>Specifications:
+<ul><li>Pin count:1</li>
+</ul></p>
+<p>Example device(s):
+<ul><li>CONN_01</li>
+</ul></p>
+
+0
+1
+1
+D1MSHO
+1X08
+
+
+0
+8
+8
+D1MSHO
+0204_5
+<b>RESISTOR</b><p>
+type 0204, grid 5 mm
+
+0
+2
+2
+D1MSHO
+B4B-ZR
+<b>ZH CONNECTOR</b>  Top entry type, 1.5 mm, 4 pin 1 row<p>
+Source: http://www.jst.com .. eZH.pdf
+
+0
+4
+4
+D1MSHO
+B6B-ZR
+
+
+0
+6
+6
+D1MSHO
+C050-025X075
+<b>CAPACITOR</b><p>
+grid 5 mm, outline 2.5 x 7.5 mm
+
+0
+2
+2
+D1MSHO
+TO92
+<b>TO 92</b>
+
+0
+3
+3
