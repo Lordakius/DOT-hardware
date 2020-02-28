@@ -1,5 +1,9 @@
 # DOT-hardware
 
+## IMPORTANT
+
+work continues on JunITer team page: https://github.com/CCT-JunITer/DoSiTracking-HW
+
 ## Requirements
 
 * (todo): boards and used chips (ESP8266)
